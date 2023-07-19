@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naman's Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body id="body">
+  <section class="menu">
+    <button id="close-menu">&times;</button>
+    <nav>
+      <ul>
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#contact-me">Contact</a></li>
+      </ul>
+    </nav>
+  </section>
+  <header class="container default-nav" style=" background-color: black;">
+    <nav>
+      <a href="#intro">Introduction</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#qualifications">Qualification</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+    <nav class="mobile-nav">
+      <button id="menu-button">Menu</button>
+    </nav>
+  </header>
+  <article class="intro"  id="intro" style="margin: 0%;">
+    <img id="profileimage" src="IMG_20230406_173039_184.jpg" alt="naman's pic" />
+    <h1 style="font-size: 40px;">Hello, Myself Naman</h1>
+    <p class="new1" style="font-size: 35px;">I am a<span id="dynamic-text"></span></p>
+    <p class="sociallinks">
+      <a href="https://www.instagram.com/the.knightace007/" target="_blank">
+        <img style="margin-bottom: 10px;" src="instagram-logo.png" alt="instagram" />
+      </a>
+      <a href="https://www.linkedin.com/in/naman--kumar-44a12720b" target="_blank">
+        <img style="margin-bottom: 10px;" src="linkedin-logo.png" alt="linkedin" />
+      </a>
+    </p>
+  </article>
+  <main class="container" style="margin: 0px">
+    <section class="about" id="about">
+      <h2 style="margin-top: 0px;">About Me</h2>
+      <p class="para" style="padding-left: 16px;">
+        A Mathematics and Computer engineer. Having enough knowledge of Data
+        structure and Algorithms in c++ language.
+      <p class="para" style="padding-left: 16px;">
+        Corrently learning one of the many skills of develping webite. And can make a frontend Website.
+      </p>
+      </p>
+    </section>
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <table class="table" >
+        <tr style="padding-left: 16px;" >
+          <td>DSA in C++</td>
+          <td>frontend Web Development</td>
+          <td>DBMS</td>
+        </tr>
+        <tr style="padding-left: 16px;" >
+          <td>VS Code</td>
+          <td>OOPS</td>
+          <td>MS Office</td>
+        </tr>
+      </table>
+    </section>
+    <section class="qualifications" id="qualifications">
+      <h2>Qualifications</h2>
+      <ol>
+        <li>Class 10th from CBSE board(90%).</li>
+        <li>Class 12th from CBSE board(92.25%).</li>
+        <li>Btech in Mathematics and Computing.(2021-25)</li>
+      </ol>
+    </section>
+    <section class="hobbies" id="hobbies">
+      <h2>Hobbies</h2>
+      <ul class="ulhobby" style="font-size: 20px;">
+        <li>Playing Cricket.</li>
+        <li>Listening to Music.</li>
+        <li>Sketching.</li>
+        <li>Reading Books.</li>
+      </ul>
+    </section>
+    <section >
+      <div>
+        <h2 style="margin-bottom: 0px; padding-bottom: 0px;">Contact Me!</h2>
+        <form netlify class="form " id="contact" name="contact" method="post">
+          <label for="name" class="label">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email" class="label">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="mob" class="label">Mobile Number:</label>
+          <input type="number symboll" id="mob" name="mob" required value="+91" >
+
+          <label for="message" class="label">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" id="button"><b>Submit</b></button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>Just a small introduction of mine ❤️.</footer>
+
+  <script src="index.js"></script>
+  <script src="menu.js"></script>
+</body>
+
+</html>
